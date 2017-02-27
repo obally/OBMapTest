@@ -13,8 +13,7 @@
 		2B3DB36E1E63CBC1006BD1A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3DB36C1E63CBC1006BD1A1 /* Main.storyboard */; };
 		2B3DB3701E63CBC1006BD1A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3DB36F1E63CBC1006BD1A1 /* Assets.xcassets */; };
 		2B3DB3731E63CBC1006BD1A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3DB3711E63CBC1006BD1A1 /* LaunchScreen.storyboard */; };
-		2B3DB37E1E63CBC1006BD1A1 /* OBMapTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DB37D1E63CBC1006BD1A1 /* OBMapTestDemoTests.m */; };
-		2B3DB3891E63CBC1006BD1A1 /* OBMapTestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DB3881E63CBC1006BD1A1 /* OBMapTestDemoUITests.m */; };
+		2B3DB3981E640689006BD1A1 /* OBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DB3971E640689006BD1A1 /* OBHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +45,11 @@
 		2B3DB3721E63CBC1006BD1A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B3DB3741E63CBC1006BD1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B3DB3791E63CBC1006BD1A1 /* OBMapTestDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OBMapTestDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B3DB37D1E63CBC1006BD1A1 /* OBMapTestDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBMapTestDemoTests.m; sourceTree = "<group>"; };
 		2B3DB37F1E63CBC1006BD1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B3DB3841E63CBC1006BD1A1 /* OBMapTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OBMapTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B3DB3881E63CBC1006BD1A1 /* OBMapTestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBMapTestDemoUITests.m; sourceTree = "<group>"; };
 		2B3DB38A1E63CBC1006BD1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B3DB3961E640689006BD1A1 /* OBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBHomeViewController.h; sourceTree = "<group>"; };
+		2B3DB3971E640689006BD1A1 /* OBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +104,8 @@
 				2B3DB3671E63CBC1006BD1A1 /* AppDelegate.m */,
 				2B3DB3691E63CBC1006BD1A1 /* ViewController.h */,
 				2B3DB36A1E63CBC1006BD1A1 /* ViewController.m */,
+				2B3DB3961E640689006BD1A1 /* OBHomeViewController.h */,
+				2B3DB3971E640689006BD1A1 /* OBHomeViewController.m */,
 				2B3DB36C1E63CBC1006BD1A1 /* Main.storyboard */,
 				2B3DB36F1E63CBC1006BD1A1 /* Assets.xcassets */,
 				2B3DB3711E63CBC1006BD1A1 /* LaunchScreen.storyboard */,
@@ -125,7 +126,6 @@
 		2B3DB37C1E63CBC1006BD1A1 /* OBMapTestDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				2B3DB37D1E63CBC1006BD1A1 /* OBMapTestDemoTests.m */,
 				2B3DB37F1E63CBC1006BD1A1 /* Info.plist */,
 			);
 			path = OBMapTestDemoTests;
@@ -134,7 +134,6 @@
 		2B3DB3871E63CBC1006BD1A1 /* OBMapTestDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2B3DB3881E63CBC1006BD1A1 /* OBMapTestDemoUITests.m */,
 				2B3DB38A1E63CBC1006BD1A1 /* Info.plist */,
 			);
 			path = OBMapTestDemoUITests;
@@ -278,6 +277,7 @@
 			files = (
 				2B3DB36B1E63CBC1006BD1A1 /* ViewController.m in Sources */,
 				2B3DB3681E63CBC1006BD1A1 /* AppDelegate.m in Sources */,
+				2B3DB3981E640689006BD1A1 /* OBHomeViewController.m in Sources */,
 				2B3DB3651E63CBC1006BD1A1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +286,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B3DB37E1E63CBC1006BD1A1 /* OBMapTestDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +293,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B3DB3891E63CBC1006BD1A1 /* OBMapTestDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +512,7 @@
 				2B3DB38F1E63CBC1006BD1A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B3DB3901E63CBC1006BD1A1 /* Build configuration list for PBXNativeTarget "OBMapTestDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +521,7 @@
 				2B3DB3921E63CBC1006BD1A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B3DB3931E63CBC1006BD1A1 /* Build configuration list for PBXNativeTarget "OBMapTestDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +530,7 @@
 				2B3DB3951E63CBC1006BD1A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
